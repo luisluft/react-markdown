@@ -10,7 +10,10 @@ function App() {
           className="input"
           value={markdown}
           onChange={(event) => setMarkdown(event.target.value)}></textarea>
-        <article className="result">{markdown}</article>
+
+        <article className="result">
+          <ReactMarkdown>{markdown}</ReactMarkdown>
+        </article>
       </section>
     </main>
   );
